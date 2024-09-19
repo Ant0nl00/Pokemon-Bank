@@ -1,9 +1,13 @@
 /* Estilo general del cuerpo */
 body {
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('Imagenes/pokemon-blue-background.avif');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
 }
 
 /* Estilo del banner */
@@ -14,7 +18,7 @@ body {
 
 .banner-image {
     width: 100%; /* Ajusta al ancho del contenedor */
-    height: 175px;
+    height: 145px;
 }
 
 /* Estilo del encabezado */
@@ -33,6 +37,7 @@ h1 {
 
 .logo-index {
     width: 15%;
+    height: 130px;
 }
 
 /* Estilo para el contenedor de botones */

@@ -4,12 +4,12 @@
     <!-- METADATOS -->
     <meta charset="UTF-8">
     <meta name="author" content="Antonio Lopez">
-    <meta name="description" content="Portafolio de desarrollo web de Antonio Lopez">
-    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Página de consulta de saldo - Pokémon Bank">
+    <meta name="keywords" content="HTML, CSS, Pokémon Bank, Consulta de Saldo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- TITULO -->
-    <title>POKEMON BANK</title>
+    <title>Consultar Saldo - Pokémon Bank</title>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="imagenes/iconos/icono-comida.png">
@@ -24,30 +24,31 @@
     <div class="banner">
         <img src="imagenes/Banner/Banner pikachu.jpg" alt="Banner Pokémon" class="banner-image">
     </div>
-    
-    <!-- Contenedor para las imágenes y menú -->
+
+    <!-- Contenedor para las imágenes y el formulario de consulta de saldo -->
     <div class="container">
         <div class="row align-items-center">
             <!-- Imagen a la izquierda -->
             <div class="col-md-4 text-center">
                 <img src="imagenes/Logos/mew.png.png" alt="Imagen Izquierda" class="gif-image">
             </div>
-            
-            <!-- Menú central -->
+
+            <!-- Formulario de consulta de saldo en el centro -->
             <div class="col-md-4 text-center">
-                <h1>Bienvenido, [MAESTRO POKEMON]</h1>
-                <p>Número de Cuenta: 1234-5678-90</p>
-                
-                <div class="btn-group-vertical">
-                    <a href="Depositar.html" class="btn btn-primary">Depositar</a>
-                    <a href="Retiro.html" class="btn btn-primary">Retirar</a>
-                    <a href="consultarsaldo.html" class="btn btn-primary">Consultar Saldo</a>
-                    
-                    <a href="servicios_bank.html " class="btn btn-primary">pago de Servicios</a>
-                    <a href="index.html" class="btn btn-secondary">Salir</a>
+                <div class="deposit-box p-4 shadow-lg text-center">
+                    <h1>Consulta de Saldo</h1>
+                    <p>Número de cuenta: 1234-5678-90</p>
+                    <form id="balanceForm" action="confirmacion_saldo.html" method="POST">
+                        <div class="form-group">
+                            <label for="accountNumber">Ingrese el número de cuenta:</label>
+                            <input type="text" id="accountNumber" name="accountNumber" class="form-control" placeholder="1234-5678-90" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Consultar Saldo</button>
+                        <a href="index.html" class="btn btn-secondary btn-block mt-3">Cancelar</a>
+                    </form>
                 </div>
             </div>
-            
+
             <!-- Imagen a la derecha -->
             <div class="col-md-4 text-center">
                 <img src="imagenes/Logos/chicorita.png" alt="Imagen Derecha" class="gif-image">
