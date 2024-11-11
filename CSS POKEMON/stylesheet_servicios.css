@@ -1,0 +1,214 @@
+
+/*body*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6b0b52, #b0d315);
+    min-height: 100vh;
+}
+
+/* Estilos básicos de la navbar */
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+/* Tarjetas de Pago */
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+}
+
+/* Botones */
+.card .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(220, 109, 18, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+/* Estilo común para las imágenes de fondo en las tarjetas */
+.card-body-agua {
+    background-image: url(../Imagenes/imagenes/Squirtle_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+}
+.card-body-luz{
+    background-image: url(../Imagenes/imagenes/Pikachu_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+} 
+.card-body-casa{
+    background-image: url(../Imagenes/imagenes/casa_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+} 
+
+.card-body-Internet {
+    background-image: url(../Imagenes/imagenes/Internet_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body-Telefono {
+    background-image: url(../Imagenes/imagenes/telefono_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body-Tarjetas {
+    background-image: url(../Imagenes/imagenes/tarjeta3_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.card-body-Seguro {
+    background-image: url(../Imagenes/imagenes/seguros_poke.jpg);
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Ocupa toda la tarjeta */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 20px; /* Espacio interno para el contenido */
+    color: white; /* Asegura que el texto sea visible sobre las imágenes */
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.card-body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Tamaños responsivos */
+@media (max-width: 768px) {
+    .card {
+        height: 200px; /* Reduce el tamaño de las tarjetas en pantallas pequeñas */
+    }
+    
+    .card-body-agua, .card-body-luz, .card-body-casa, .card-body-agregar {
+        padding: 10px; /* Menor padding para pantallas pequeñas */
+        font-size: 0.9rem; /* Ajuste del tamaño del texto */
+    }
+}
+
+/* Opcional: Añadir un pequeño efecto hover */
+.card:hover {
+    transform: scale(1.05); /* Amplía ligeramente la tarjeta al pasar el ratón */
+    transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas</title>
+    <link rel="stylesheet" href="../CSS POKEMON/finanzas.css">
+    <!-- Incluir Chart.js desde el CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="../Imagenes/Banner/Banner pikachu.jpg" alt="Banner Pokémon" class="banner-image">
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Historial de Transacciones y Gráfico</h1>
+        </div>
+
+        <div class="content">
+            <!-- Imagen a la izquierda -->
+            <div class="col-md-4 text-center">
+                <img src="../Imagenes/Logos/mew.png.png" alt="Imagen Izquierda" class="gif-image">
+            </div>
+            
+            <!-- Sección del gráfico y historial de transacciones en el centro -->
+            <div class="center-content">
+                <div class="chart">
+                    <h2 class="title">Gráfico de Transacciones</h2>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+
+                <!-- Sección del historial de transacciones -->
+                <div class="transactions">
+                    <h2 class="title">Historial de Transacciones</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Tipo</th>
+                                <th>Monto</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactionTableBody">
+                            <!-- Las filas se llenarán dinámicamente -->
+                             
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Imagen a la derecha -->
+            <div class="col-md-4 text-center">
+                <img src="../Imagenes/Logos/chicorita.png" alt="Imagen Derecha" class="gif-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pokémon Bank. Todos los derechos reservados.</p>
+    </footer>
+        <!-- Script para generar la gráfica y cargar el historial -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../JAVASCRIPT/finanzas.js"></script>
+        <script src="../JAVASCRIPT/pagoAgua.js"></script>
+        <script src="../JAVASCRIPT/pagoLuz.js"></script>
+        <script src="../JAVASCRIPT/pagoCasa.js"></script>
+        <script src="../JAVASCRIPT/pagoSeguro.js"></script>
+        <script src="../JAVASCRIPT/pagarInternet.js"></script>
+        <script src="../JAVASCRIPT/pagarTelefono.js"></script>
+
+</body>
+</html>
+

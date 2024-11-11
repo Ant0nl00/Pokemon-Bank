@@ -1,0 +1,100 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imagenes/imagenes/pokemon-blue-background.avif);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
+/* Estilo del banner */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 145px;
+}
+
+/* Estilo del encabezado */
+h1 {
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes GIF */
+.gif-image {
+    width: 100%; /* Ajusta el tamaño según lo necesites */
+    max-width: 150px; /* Tamaño máximo de la imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-index {
+    width: 15%;
+    height: 130px;
+}
+
+/* Estilo para el contenedor de botones */
+.btn-group-vertical {
+    margin-top: 20px;
+}
+
+/* Estilo para los botones primarios */
+.btn-primary {
+    background-color: #ffcc00 !important; /* Color de fondo amarillo con alta prioridad */
+    border: none !important; /* Sin borde predeterminado con alta prioridad */
+    color: #000 !important; /* Color del texto negro con alta prioridad */
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #ffdd33 !important; /* Color de fondo amarillo más claro cuando se pasa el mouse con alta prioridad */
+}
+
+/* Estilo para los botones secundarios */
+.btn-secondary {
+    background-color: #f0f0f0 !important; /* Color de fondo gris claro con alta prioridad */
+    border-color: #ccc !important; /* Color del borde gris claro con alta prioridad */
+    color: #000 !important; /* Color del texto negro con alta prioridad */
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0 !important; /* Color de fondo gris más oscuro cuando se pasa el mouse con alta prioridad */
+    border-color: #bbb !important; /* Color del borde gris más oscuro cuando se pasa el mouse con alta prioridad */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo para el contenedor de filas */
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del cuadro de inicio de sesión y menú */
+.login-box, .btn-group-vertical {
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 400px;
+}

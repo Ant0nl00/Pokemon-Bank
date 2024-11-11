@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Lopez">
+    <meta name="description" content="Portafolio de desarrollo web de Antonio Lopez">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- TITULO -->
+    <title>POKEMON BANK</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../Imagenes/Logos/mew.png.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS POKEMON/style.css">
+     <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS POKEMON/style.css">
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="../Imagenes/Banner/Banner pikachu.jpg" alt="Banner Pokémon" class="banner-image">
+    </div>
+    <div class="container text-center">
+        <h1>Pokémon Bank</h1>
+        <img src="../Imagenes/Logos/Logo-Squirtle.png" alt="Pokémon Bank Logo" class="logo-index">
+        <div class="login-box">
+            <h2>Inicio de Sesión</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="pin">Ingrese su PIN (4 dígitos):</label>
+                    <input type="password" id="pin" class="form-control" minlength="4" maxlength="4" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Acceder</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pokémon Bank. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Enlace a login.js -->
+    <script src="../JAVASCRIPT/login.js"></script>
+</body>
+</html>

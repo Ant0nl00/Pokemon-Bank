@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Lopez">
+    <meta name="description" content="Página de consulta de saldo - Pokémon Bank">
+    <meta name="keywords" content="HTML, CSS, Pokémon Bank, Consulta de Saldo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- TITULO -->
+    <title>Consultar Saldo - Pokémon Bank</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../Imagenes/Logos/mew.png.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS POKEMON/style.css">
+
+     <!-- SweetAlert -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="../Imagenes/Banner/Banner pikachu.jpg" alt="Banner Pokémon" class="banner-image">
+    </div>
+
+    <!-- Contenedor para las imágenes y el formulario de consulta de saldo -->
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Imagen a la izquierda -->
+            <div class="col-md-4 text-center">
+                <img src="../Imagenes/Logos/mew.png.png" alt="Imagen Izquierda" class="gif-image">
+            </div>
+
+            <!-- Formulario de consulta de saldo en el centro -->
+            <div class="col-md-4 text-center">
+                <div class="deposit-box p-4 shadow-lg text-center">
+                    <h1>Consulta de Saldo</h1>
+                    <p>Número de cuenta: 0987654321</p>
+                    <form id="balanceForm">
+                        <div class="form-group">
+                            <label for="accountNumber">Ingrese el número de cuenta:</label>
+                            <input type="text" id="accountNumber" class="form-control" placeholder="0987654321" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Consultar Saldo</button>
+                        <a href="../HTML POKEMON/acciones.html" class="btn btn-secondary btn-block mt-3">Volver</a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Imagen a la derecha -->
+            <div class="col-md-4 text-center">
+                <img src="../Imagenes/Logos/chicorita.png" alt="Imagen Derecha" class="gif-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pokémon Bank. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="../JAVASCRIPT/balance.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+</body>
+</html>
